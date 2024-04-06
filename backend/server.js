@@ -9,9 +9,8 @@ app.use(express.urlencoded({extended:false}));
 
 app.use(express.json());
 
-app.use(cors(
-{origin: ["http://localhost:5173/",'https://front-hai.onrender.com']}
-))
+app.use(cors())
+// {origin: ["http://localhost:5173/",'https://front-hai.onrender.com']}
 
 app.get('/',(req,res)=>{
     res.send("Home page")
